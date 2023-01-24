@@ -1,0 +1,66 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Project Requirement Document}
+\author{Aditya Girdhar (2021005), Anay Chauhan (2021013)}
+
+\begin{document}
+\maketitle
+
+\section{Project Scope}
+
+Our project implements the various essential backend functionalities of a cab booking system, while at the same time providing a desirable and easy user experience making it a fully functioning application. These functionalities will include ride booking, driver and vehicle management, payment handling, integration of maps and various alerts and notification generation as and when required while ensuring that the backend architecture is able to handle requests from multiple users at the same time.
+
+\section{Technical Requirements}
+
+\subsection{MySQL (Relational Database Management System)}
+
+MySQL is a free and open-source relational database management system. We plan on using it for managing all the data storage and retrieval needs such as bookings \& payment management, vehicle \& dispatch management etc.
+
+\subsection{Django (Python-based Backend Framework)}
+
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. We plan on using it to develop supporting functionalities in our project such as user profile management. Django facilitates easy interfacing with MySQL and provides secure maintenance of websites without extra effort.
+
+\subsection{React (JavaScript-based Frontend Library)}
+
+React is a free and open-source JavaScript library for building user interfaces based on UI components. We plan on using it to design the user interface of the cab booking system which is easy to use and provides convenient access to all the functionalities we plan to implement.
+
+\section{Functional Requirements}
+
+\subsection{Bookings Management}
+Functionalities to book a ride, view current booking details and history, along with options to cancel the ride or view driver details.
+
+\subsection{Payment Management}
+Dummy payment processing functionality. Options for online payment (only upon completion of which the booking will be confirmed) and cash (once the trip has been completed)
+
+\subsection{Driver \& Vehicle Management}
+Functionalities to assign the nearest available driver to the user, and options to view driver/vehicle details and track their location.
+
+\subsection{Dispatch Management}
+Functionalities to estimate trip times and compute the shortest path between two points using traditional shortest path algorithms like Djikstra.
+
+\subsection{Scalability \& Performance}
+Design the back-end in a way that’s easy and efficient to scale to higher volumes of requests in the future.
+
+\subsection{Integration with Maps}
+Functionalities to integrate geolocation services to plot the location of the driver and passenger, along with a highlighted path showing the route.
+
+\subsection{Push Notifications}
+Simple alerts to notify the user about key events such as “Booking confirmed”, “Payment successful”, “Driver arrived” etc.
+
+\subsection{Security by design}
+Functionalities to ensure the security of sensitive data such as user credentials and other personal information.
+
+\end{document}
