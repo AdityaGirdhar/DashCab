@@ -1,1 +1,3 @@
+# Add files to ignore here
 __pycache__
+.gitignore
