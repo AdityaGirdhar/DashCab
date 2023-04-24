@@ -1,7 +1,7 @@
 import tkinter as tk
 import mysql.connector
 import json
-from app import Location
+from book import Location
 
 db = mysql.connector.connect(
 	host="127.0.0.1",

@@ -1,7 +1,7 @@
 import tkinter as tk
 import json
 from auth import Login, Signup
-from app import Location, Payment
+from book import Location, Payment
 
 class Welcome(tk.Frame):
     def __init__(self, parent, controller):

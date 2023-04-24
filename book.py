@@ -57,8 +57,6 @@ class Payment(tk.Frame):
         
         tk.Label(self, text="\n———").pack()
         tk.Button(self, text='Confirm Booking', command=self.submit_input).pack()
-        
-        
 
     def submit_input(self):
         json_object = None
