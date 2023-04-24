@@ -1,5 +1,6 @@
 import tkinter as tk
 import json, random
+from status import RideProgress
 import mysql.connector
 
 class Location(tk.Frame):
@@ -62,8 +63,8 @@ class Payment(tk.Frame):
         json_object = None
         with open('env.json', 'r') as file:
             data = json.load(file)
-            data['vehicle_type'] = self.type
+            data['vehicle_type'] = str(self.type)
             json_object = json.dumps(data, indent=4)
         with open('env.json', 'w') as file:
             file.write(json_object)
-        self.controller.show_frame(Dashboard)
+        self.controller.show_frame(RideProgress)
